@@ -3,6 +3,7 @@ package ng.com.androidlife.wapafx;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ public class NewsWeb extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState){
+                             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_news_web, container, false);
 
         mWebView = rootView.findViewById(R.id.newsWeb);
