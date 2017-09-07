@@ -25,6 +25,10 @@ public class home extends Fragment {
     TextView eust1;
     TextView cnbt1;
     TextView cnst1;
+    TextView cfbt1;
+    TextView cfst1;
+    TextView rybt1;
+    TextView ryst1;
 
     TextView usbt2;
     TextView usst2;
@@ -34,6 +38,10 @@ public class home extends Fragment {
     TextView eust2;
     TextView cnbt2;
     TextView cnst2;
+    TextView cfbt2;
+    TextView cfst2;
+    TextView rybt2;
+    TextView ryst2;
 
     TextView usbt3;
     TextView usst3;
@@ -43,6 +51,10 @@ public class home extends Fragment {
     TextView eust3;
     TextView cnbt3;
     TextView cnst3;
+    TextView cfbt3;
+    TextView cfst3;
+    TextView rybt3;
+    TextView ryst3;
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -55,6 +67,10 @@ public class home extends Fragment {
     DatabaseReference eust1Ref = mRootRef.child("eust1");
     DatabaseReference cnbt1Ref = mRootRef.child("cnbt1");
     DatabaseReference cnst1Ref = mRootRef.child("cnst1");
+    DatabaseReference cfbt1Ref = mRootRef.child("cfbt1");
+    DatabaseReference cfst1Ref = mRootRef.child("cfst1");
+    DatabaseReference rybt1Ref = mRootRef.child("rybt1");
+    DatabaseReference ryst1Ref = mRootRef.child("ryst1");
 
     DatabaseReference usbt2Ref = mRootRef.child("usbt2");
     DatabaseReference usst2Ref = mRootRef.child("usst2");
@@ -64,6 +80,10 @@ public class home extends Fragment {
     DatabaseReference eust2Ref = mRootRef.child("eust2");
     DatabaseReference cnbt2Ref = mRootRef.child("cnbt2");
     DatabaseReference cnst2Ref = mRootRef.child("cnst2");
+    DatabaseReference cfbt2Ref = mRootRef.child("cfbt2");
+    DatabaseReference cfst2Ref = mRootRef.child("cfst2");
+    DatabaseReference rybt2Ref = mRootRef.child("rybt2");
+    DatabaseReference ryst2Ref = mRootRef.child("ryst2");
 
     DatabaseReference usbt3Ref = mRootRef.child("usbt3");
     DatabaseReference usst3Ref = mRootRef.child("usst3");
@@ -73,6 +93,10 @@ public class home extends Fragment {
     DatabaseReference eust3Ref = mRootRef.child("eust3");
     DatabaseReference cnbt3Ref = mRootRef.child("cnbt3");
     DatabaseReference cnst3Ref = mRootRef.child("cnst3");
+    DatabaseReference cfbt3Ref = mRootRef.child("cfbt3");
+    DatabaseReference cfst3Ref = mRootRef.child("cfst3");
+    DatabaseReference rybt3Ref = mRootRef.child("rybt3");
+    DatabaseReference ryst3Ref = mRootRef.child("ryst3");
 
     DatabaseReference dateRef = mRootRef.child("date");
 
@@ -91,6 +115,10 @@ public class home extends Fragment {
         eust1 =  rootView.findViewById(R.id.eust1);
         cnbt1 =  rootView.findViewById(R.id.cnbt1);
         cnst1 =  rootView.findViewById(R.id.cnst1);
+        cfbt1 =  rootView.findViewById(R.id.cfbt1);
+        cfst1 = rootView.findViewById(R.id.cfst1);
+        rybt1 = rootView.findViewById(R.id.rybt1);
+        ryst1 = rootView.findViewById(R.id.ryst1);
 
         usbt2 =  rootView.findViewById(R.id.usbt2);
         usst2 =  rootView.findViewById(R.id.usst2);
@@ -100,6 +128,10 @@ public class home extends Fragment {
         eust2 =  rootView.findViewById(R.id.eust2);
         cnbt2 =  rootView.findViewById(R.id.cnbt2);
         cnst2 =  rootView.findViewById(R.id.cnst2);
+        cfbt2 = rootView.findViewById(R.id.cfbt2);
+        cfst2 = rootView.findViewById(R.id.cfst2);
+        rybt2 = rootView.findViewById(R.id.rybt2);
+        ryst2 = rootView.findViewById(R.id.ryst2);
 
         usbt3 = rootView.findViewById(R.id.usbt3);
         usst3 = rootView.findViewById(R.id.usst3);
@@ -109,6 +141,10 @@ public class home extends Fragment {
         eust3 = rootView.findViewById(R.id.eust3);
         cnbt3 = rootView.findViewById(R.id.cnbt3);
         cnst3 = rootView.findViewById(R.id.cnst3);
+        cfst3 = rootView.findViewById(R.id.cfst3);
+        cfbt3 = rootView.findViewById(R.id.cfbt3);
+        rybt3 = rootView.findViewById(R.id.rybt3);
+        ryst3 = rootView.findViewById(R.id.ryst3);
 
         return rootView;
     }
@@ -458,6 +494,174 @@ public class home extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String text = dataSnapshot.getValue(String.class);
                 cnst3.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfbt1Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfbt1.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfst1Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfst1.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfst2Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfst2.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfbt2Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfbt2.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfbt3Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfbt3.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        cfst3Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                cfst3.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        rybt1Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                rybt1.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        ryst1Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                ryst1.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        rybt2Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                rybt2.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        ryst2Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                ryst2.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        rybt3Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                rybt3.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        ryst3Ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                ryst3.setText(text);
 
             }
 

@@ -301,14 +301,104 @@
             android:layout_alignLeft="@+id/imageView22"
             android:layout_alignStart="@+id/imageView22"
             android:layout_below="@+id/imageView22"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@drawable/sdflag" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView22"
+            android:layout_toEndOf="@+id/imageView22"
+            android:layout_toRightOf="@+id/imageView22"
+            android:text="CFA"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView23"
+            android:layout_toEndOf="@+id/imageView23"
+            android:layout_toRightOf="@+id/imageView23"
+            android:text="SAR"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cfbweekm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cnbweekm"
+            android:layout_alignStart="@+id/cnbweekm"
+            android:layout_alignTop="@+id/textView7"
+            android:text="N000"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cfsweekm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cnsweekm"
+            android:layout_alignStart="@+id/cnsweekm"
+            android:layout_alignTop="@+id/cfbweekm"
+            android:text="N000"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:layout_alignTop="@+id/cfsweekm"
+            android:text="**"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rybweekm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N000"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignLeft="@+id/cfbweekm"
+            android:layout_alignStart="@+id/cfbweekm" />
+
+        <TextView
+            android:id="@+id/rysweekm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N000"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/rybweekm"
+            android:layout_alignBottom="@+id/rybweekm"
+            android:layout_alignLeft="@+id/cfsweekm"
+            android:layout_alignStart="@+id/cfsweekm" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignTop="@+id/rysweekm"
+            android:text="**"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp">
+            android:layout_height="185dp">
 
 
             <ImageView
@@ -539,8 +629,97 @@
                 android:layout_alignLeft="@+id/imageView24"
                 android:layout_alignStart="@+id/imageView24"
                 android:layout_below="@+id/imageView24"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/sdflag" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView24"
+                android:layout_toEndOf="@+id/imageView24"
+                android:layout_toRightOf="@+id/imageView24"
+                android:text="CFA"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cfbweeka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cnbweeka"
+                android:layout_alignStart="@+id/cnbweeka"
+                android:layout_alignTop="@+id/textView13"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cfsweeka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cnsweeka"
+                android:layout_alignStart="@+id/cnsweeka"
+                android:layout_alignTop="@+id/cfbweeka"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView26"
+                android:layout_alignStart="@+id/textView26"
+                android:layout_alignTop="@+id/cfsweeka"
+                android:text="*"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView25"
+                android:layout_toEndOf="@+id/imageView25"
+                android:layout_toRightOf="@+id/imageView25"
+                android:text="SAR"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rybweeka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignTop="@+id/textView28"
+                android:layout_alignLeft="@+id/cfbweeka"
+                android:layout_alignStart="@+id/cfbweeka" />
+
+            <TextView
+                android:id="@+id/rysweeka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignBaseline="@+id/rybweeka"
+                android:layout_alignBottom="@+id/rybweeka"
+                android:layout_alignLeft="@+id/cfsweeka"
+                android:layout_alignStart="@+id/cfsweeka" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:layout_alignTop="@+id/rysweeka"
+                android:text="*"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 
@@ -724,7 +903,7 @@
                 android:layout_alignLeft="@+id/imageView16"
                 android:layout_alignStart="@+id/imageView16"
                 android:layout_below="@+id/imageView16"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/cfflag" />
 
             <ImageView
@@ -734,8 +913,74 @@
                 android:layout_alignLeft="@+id/imageView26"
                 android:layout_alignStart="@+id/imageView26"
                 android:layout_below="@+id/imageView26"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/sdflag" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView26"
+                android:layout_toEndOf="@+id/imageView26"
+                android:layout_toRightOf="@+id/imageView26"
+                android:text="CFA"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cfbweeke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cnbweeke"
+                android:layout_alignStart="@+id/cnbweeke"
+                android:layout_alignTop="@+id/textView35"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cfsweeke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cnsweeke"
+                android:layout_alignStart="@+id/cnsweeke"
+                android:layout_alignTop="@+id/cfbweeke"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView27"
+                android:layout_toEndOf="@+id/imageView27"
+                android:layout_toRightOf="@+id/imageView27"
+                android:text="SAR"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rybweeke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cfbweeke"
+                android:layout_alignStart="@+id/cfbweeke"
+                android:layout_alignTop="@+id/textView38"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rysweeke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cfsweeke"
+                android:layout_alignStart="@+id/cfsweeke"
+                android:layout_alignTop="@+id/rybweeke"
+                android:text="N000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 

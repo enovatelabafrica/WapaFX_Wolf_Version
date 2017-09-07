@@ -7,11 +7,14 @@ package ng.com.androidlife.wapafx;
 public class ModelClass {
     String title, image, desc, weeklydate, weeklytime, usbweek, ussweek, ukbweek, uksweek, eubweek, eusweek, cnbweek, cnsweek,
     usbweeka, ussweeka, ukbweeka, uksweeka, eubweeka, eusweeka, cnbweeka, cnsweeka,
-            usbweeke, ussweeke, ukbweeke, uksweeke, eubweeke, eusweeke, cnbweeke, cnsweeke;
+            usbweeke, ussweeke, ukbweeke, uksweeke, eubweeke, eusweeke, cnbweeke, cnsweeke, cfbweek, cfsweek, cfbweeka, cfsweeka, cfbweeke, cfsweeke,
+                                                                                            rybweek, rysweek, rybweeka, rysweeka, rybweeke, rysweeke;
+
 
     public ModelClass(String title, String image, String desc, String weeklydate, String weeklytime, String usbweek, String ussweek, String ukbweek, String uksweek, String eubweek, String eusweek, String cnbweek, String cnsweek,
                       String usbweeka, String ussweeka, String ukbweeka, String uksweeka, String eubweeka, String eusweeka, String cnbweeka, String cnsweeka,
-                      String usbweeke, String ussweeke, String ukbweeke, String uksweeke, String eubweeke, String eusweeke, String cnbweeke, String cnsweeke) {
+                      String usbweeke, String ussweeke, String ukbweeke, String uksweeke, String eubweeke, String eusweeke, String cnbweeke, String cnsweeke,
+                      String cfbweek, String cfsweek, String cfbweeka, String cfsweeka, String cfbweeke, String cfsweeke, String rybweek, String rysweek, String rybweeka, String rysweeka, String rybweeke, String rysweeke) {
         this.title = title;
         this.image = image;
         this.desc = desc;
@@ -25,6 +28,10 @@ public class ModelClass {
         this.eusweek = eusweek;
         this.cnbweek = cnbweek;
         this.cnsweek = cnsweek;
+        this.cfbweek = cfbweek;
+        this.cfsweek = cfsweek;
+        this.rybweek = rybweek;
+        this.rybweek = rybweek;
 
         this.usbweeka = usbweeka;
         this.ussweeka = ussweeka;
@@ -34,6 +41,10 @@ public class ModelClass {
         this.eusweeka = eusweeka;
         this.cnbweeka = cnbweeka;
         this.cnsweeka = cnsweeka;
+        this.cfbweeka = cfbweeka;
+        this.cfsweeka = cfsweeka;
+        this.rybweeka = rybweeka;
+        this.rysweeka = rysweeka;
 
         this.usbweeke = usbweeke;
         this.ussweeke = ussweeke;
@@ -43,6 +54,10 @@ public class ModelClass {
         this.eusweeke = eusweeke;
         this.cnbweeke = cnbweeke;
         this.cnsweeke = cnsweeke;
+        this.cfbweeke = cfsweeke;
+        this.cfsweeke = cfsweeke;
+        this.rybweeke = rybweeke;
+        this.rysweeke = rysweeke;
     }
 
     public ModelClass() {
@@ -279,5 +294,101 @@ public class ModelClass {
 
     public void setCnsweeke(String cnsweeke) {
         this.cnsweeke = cnsweeke;
+    }
+
+    public String getCfbweek() {
+        return cfbweek;
+    }
+
+    public void setCfbweek(String cfbweek) {
+        this.cfbweek = cfbweek;
+    }
+
+    public String getCfsweek() {
+        return cfsweek;
+    }
+
+    public void setCfsweek(String cfsweek) {
+        this.cfsweek = cfsweek;
+    }
+
+    public String getCfbweeka() {
+        return cfbweeka;
+    }
+
+    public void setCfbweeka(String cfbweeka) {
+        this.cfbweeka = cfbweeka;
+    }
+
+    public String getCfsweeka() {
+        return cfsweeka;
+    }
+
+    public void setCfsweeka(String cfsweeka) {
+        this.cfsweeka = cfsweeka;
+    }
+
+    public String getCfbweeke() {
+        return cfbweeke;
+    }
+
+    public void setCfbweeke(String cfbweeke) {
+        this.cfbweeke = cfbweeke;
+    }
+
+    public String getCfsweeke() {
+        return cfsweeke;
+    }
+
+    public void setCfsweeke(String cfsweeke) {
+        this.cfsweeke = cfsweeke;
+    }
+
+    public String getRybweek() {
+        return rybweek;
+    }
+
+    public void setRybweek(String rybweek) {
+        this.rybweek = rybweek;
+    }
+
+    public String getRysweek() {
+        return rysweek;
+    }
+
+    public void setRysweek(String rysweek) {
+        this.rysweek = rysweek;
+    }
+
+    public String getRybweeka() {
+        return rybweeka;
+    }
+
+    public void setRybweeka(String rybweeka) {
+        this.rybweeka = rybweeka;
+    }
+
+    public String getRysweeka() {
+        return rysweeka;
+    }
+
+    public void setRysweeka(String rysweeka) {
+        this.rysweeka = rysweeka;
+    }
+
+    public String getRybweeke() {
+        return rybweeke;
+    }
+
+    public void setRybweeke(String rybweeke) {
+        this.rybweeke = rybweeke;
+    }
+
+    public String getRysweeke() {
+        return rysweeke;
+    }
+
+    public void setRysweeke(String rysweeke) {
+        this.rysweeke = rysweeke;
     }
 }
