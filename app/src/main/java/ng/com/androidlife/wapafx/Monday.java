@@ -64,6 +64,10 @@ public class Monday extends AppCompatActivity {
                 viewHolder.setEusweekly(model.getEusweek());
                 viewHolder.setCnbweekly(model.getCnbweek());
                 viewHolder.setCnsweekly(model.getCnsweek());
+                viewHolder.setCfbweekly(model.getCfbweek());
+                viewHolder.setCfsweekly(model.getCfsweek());
+                viewHolder.setRybweekly(model.getRybweek());
+                viewHolder.setRysweekly(model.getRysweek());
 
                 viewHolder.setUsbweekaly(model.getUsbweeka());
                 viewHolder.setUssweekaly(model.getUssweeka());
@@ -73,6 +77,10 @@ public class Monday extends AppCompatActivity {
                 viewHolder.setEusweekaly(model.getEusweeka());
                 viewHolder.setCnbweekaly(model.getCnbweeka());
                 viewHolder.setCnsweekaly(model.getCnsweeka());
+                viewHolder.setCfbweekaly(model.getCfbweeka());
+                viewHolder.setCfsweekaly(model.getCfsweeka());
+                viewHolder.setRybweekaly(model.getRybweeka());
+                viewHolder.setRysweekaly(model.getRysweeka());
 
                 viewHolder.setUsbweekely(model.getUsbweeke());
                 viewHolder.setUssweekely(model.getUssweeke());
@@ -82,6 +90,10 @@ public class Monday extends AppCompatActivity {
                 viewHolder.setEusweekely(model.getEusweeke());
                 viewHolder.setCnbweekely(model.getCnbweeke());
                 viewHolder.setCnsweekely(model.getCnsweeke());
+                viewHolder.setCfbweekely(model.getCfbweeke());
+                viewHolder.setCfsweekely(model.getCfsweeke());
+                viewHolder.setRybweekely(model.getRybweeke());
+                viewHolder.setRysweekely(model.getRysweeke());
             }
         };
 
@@ -197,6 +209,54 @@ public class Monday extends AppCompatActivity {
         public void setCnsweekely(String cnsweeke){
             TextView cnsweekely = (TextView)mView.findViewById(R.id.cnsweeke);
             cnsweekely.setText(cnsweeke);
+        }
+        public void setCfbweekly(String cfbweek){
+            TextView cfbweekly = (TextView)mView.findViewById(R.id.cfbweekm);
+            cfbweekly.setText(cfbweek);
+        }
+        public void setCfsweekly(String cfsweek){
+            TextView cfsweekly = (TextView)mView.findViewById(R.id.cfsweekm);
+            cfsweekly.setText(cfsweek);
+        }
+        public void setCfbweekaly(String cfbweeka){
+            TextView cfbweekaly = (TextView)mView.findViewById(R.id.cfbweeka);
+            cfbweekaly.setText(cfbweeka);
+        }
+        public void setCfsweekaly(String cfsweeka){
+            TextView cfsweekaly = (TextView)mView.findViewById(R.id.cfsweeka);
+            cfsweekaly.setText(cfsweeka);
+        }
+        public void setCfbweekely(String cfbweeke){
+            TextView cfbweekely = (TextView)mView.findViewById(R.id.cfbweeke);
+            cfbweekely.setText(cfbweeke);
+        }
+        public void setCfsweekely(String cfsweeke){
+            TextView cfsweekely = (TextView)mView.findViewById(R.id.cfsweeke);
+            cfsweekely.setText(cfsweeke);
+        }
+        public void setRybweekly(String rybweek){
+            TextView rybweekly = (TextView)mView.findViewById(R.id.rybweekm);
+            rybweekly.setText(rybweek);
+        }
+        public void setRysweekly(String rysweek){
+            TextView rysweekly = (TextView)mView.findViewById(R.id.rysweekm);
+            rysweekly.setText(rysweek);
+        }
+        public void setRybweekaly(String rybweeka){
+            TextView rybweekaly = (TextView)mView.findViewById(R.id.rybweeka);
+            rybweekaly.setText(rybweeka);
+        }
+        public void setRysweekaly(String rysweeka){
+            TextView rysweekaly = (TextView)mView.findViewById(R.id.rysweeka);
+            rysweekaly.setText(rysweeka);
+        }
+        public void setRybweekely(String rybweeke){
+            TextView rybweekely = (TextView)mView.findViewById(R.id.rybweeke);
+            rybweekely.setText(rybweeke);
+        }
+        public void setRysweekely(String rysweeke){
+            TextView rysweekely = (TextView)mView.findViewById(R.id.rysweeke);
+            rysweekely.setText(rysweeke);
         }
     }
 }

@@ -31,7 +31,7 @@ public class ModelClass {
         this.cfbweek = cfbweek;
         this.cfsweek = cfsweek;
         this.rybweek = rybweek;
-        this.rybweek = rybweek;
+        this.rysweek = rysweek;
 
         this.usbweeka = usbweeka;
         this.ussweeka = ussweeka;
@@ -54,7 +54,7 @@ public class ModelClass {
         this.eusweeke = eusweeke;
         this.cnbweeke = cnbweeke;
         this.cnsweeke = cnsweeke;
-        this.cfbweeke = cfsweeke;
+        this.cfbweeke = cfbweeke;
         this.cfsweeke = cfsweeke;
         this.rybweeke = rybweeke;
         this.rysweeke = rysweeke;

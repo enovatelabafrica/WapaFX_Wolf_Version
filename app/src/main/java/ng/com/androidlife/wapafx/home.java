@@ -120,7 +120,7 @@ public class home extends Fragment {
         rybt1 = rootView.findViewById(R.id.rybt1);
         ryst1 = rootView.findViewById(R.id.ryst1);
 
-        usbt2 =  rootView.findViewById(R.id.usbt2);
+       /** usbt2 =  rootView.findViewById(R.id.usbt2);
         usst2 =  rootView.findViewById(R.id.usst2);
         ukbt2 =  rootView.findViewById(R.id.ukbt2);
         ukst2 =  rootView.findViewById(R.id.ukst2);
@@ -144,7 +144,7 @@ public class home extends Fragment {
         cfst3 = rootView.findViewById(R.id.cfst3);
         cfbt3 = rootView.findViewById(R.id.cfbt3);
         rybt3 = rootView.findViewById(R.id.rybt3);
-        ryst3 = rootView.findViewById(R.id.ryst3);
+        ryst3 = rootView.findViewById(R.id.ryst3);**/
 
         return rootView;
     }
@@ -279,7 +279,7 @@ public class home extends Fragment {
             }
         });
 
-        usbt2Ref.addValueEventListener(new ValueEventListener() {
+        /**usbt2Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String text = dataSnapshot.getValue(String.class);
@@ -501,7 +501,7 @@ public class home extends Fragment {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });**/
 
         cfbt1Ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -531,7 +531,7 @@ public class home extends Fragment {
             }
         });
 
-        cfst2Ref.addValueEventListener(new ValueEventListener() {
+        /**cfst2Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String text = dataSnapshot.getValue(String.class);
@@ -585,7 +585,7 @@ public class home extends Fragment {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });**/
 
         rybt1Ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -615,7 +615,7 @@ public class home extends Fragment {
             }
         });
 
-        rybt2Ref.addValueEventListener(new ValueEventListener() {
+        /**rybt2Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String text = dataSnapshot.getValue(String.class);
@@ -669,6 +669,6 @@ public class home extends Fragment {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        }); **/
     }
 }

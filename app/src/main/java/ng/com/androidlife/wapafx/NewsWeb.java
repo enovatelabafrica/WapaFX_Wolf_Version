@@ -33,7 +33,7 @@ public class NewsWeb extends Fragment {
         mProgress = ProgressDialog.show(getActivity(), "Loading...", "Please wait!", true);
 
         // Use remote resource
-        mWebView.loadUrl("https://news.google.com/news");
+        mWebView.loadUrl("https://www.cryptocoinsnews.com/");
 
         // Stop local links and redirects from opening in browser instead of WebView
         // mWebView.setWebViewClient(new MyAppWebViewClient());
