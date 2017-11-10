@@ -8,13 +8,12 @@ public class ModelClass {
     String title, image, desc, weeklydate, weeklytime, usbweek, ussweek, ukbweek, uksweek, eubweek, eusweek, cnbweek, cnsweek,
     usbweeka, ussweeka, ukbweeka, uksweeka, eubweeka, eusweeka, cnbweeka, cnsweeka,
             usbweeke, ussweeke, ukbweeke, uksweeke, eubweeke, eusweeke, cnbweeke, cnsweeke, cfbweek, cfsweek, cfbweeka, cfsweeka, cfbweeke, cfsweeke,
-                                                                                            rybweek, rysweek, rybweeka, rysweeka, rybweeke, rysweeke;
-
+                                                                                            rybweek, rysweek, rybweeka, rysweeka, rybweeke, rysweeke, bitBuy, bitSell;
 
     public ModelClass(String title, String image, String desc, String weeklydate, String weeklytime, String usbweek, String ussweek, String ukbweek, String uksweek, String eubweek, String eusweek, String cnbweek, String cnsweek,
                       String usbweeka, String ussweeka, String ukbweeka, String uksweeka, String eubweeka, String eusweeka, String cnbweeka, String cnsweeka,
                       String usbweeke, String ussweeke, String ukbweeke, String uksweeke, String eubweeke, String eusweeke, String cnbweeke, String cnsweeke,
-                      String cfbweek, String cfsweek, String cfbweeka, String cfsweeka, String cfbweeke, String cfsweeke, String rybweek, String rysweek, String rybweeka, String rysweeka, String rybweeke, String rysweeke) {
+                      String cfbweek, String cfsweek, String cfbweeka, String cfsweeka, String cfbweeke, String cfsweeke, String rybweek, String rysweek, String rybweeka, String rysweeka, String rybweeke, String rysweeke, String bitBuy, String bitSell) {
         this.title = title;
         this.image = image;
         this.desc = desc;
@@ -58,6 +57,9 @@ public class ModelClass {
         this.cfsweeke = cfsweeke;
         this.rybweeke = rybweeke;
         this.rysweeke = rysweeke;
+
+        this.bitBuy = bitBuy;
+        this.bitSell = bitSell;
     }
 
     public ModelClass() {
@@ -390,5 +392,21 @@ public class ModelClass {
 
     public void setRysweeke(String rysweeke) {
         this.rysweeke = rysweeke;
+    }
+
+    public String getBitBuy() {
+        return bitBuy;
+    }
+
+    public void setBitBuy(String bitBuy) {
+        this.bitBuy = bitBuy;
+    }
+
+    public String getBitSell() {
+        return bitSell;
+    }
+
+    public void setBitSell(String bitSell) {
+        this.bitSell = bitSell;
     }
 }

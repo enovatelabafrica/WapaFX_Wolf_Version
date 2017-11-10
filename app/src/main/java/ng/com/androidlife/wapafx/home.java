@@ -56,6 +56,9 @@ public class home extends Fragment {
     TextView rybt3;
     TextView ryst3;
 
+    TextView btBuy;
+    TextView btSell;
+
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
 
 
@@ -98,6 +101,9 @@ public class home extends Fragment {
     DatabaseReference rybt3Ref = mRootRef.child("rybt3");
     DatabaseReference ryst3Ref = mRootRef.child("ryst3");
 
+    DatabaseReference btBuyRef = mRootRef.child("btBuy");
+    DatabaseReference btSellRef = mRootRef.child("btSell");
+
     DatabaseReference dateRef = mRootRef.child("date");
 
     @Override
@@ -119,6 +125,9 @@ public class home extends Fragment {
         cfst1 = rootView.findViewById(R.id.cfst1);
         rybt1 = rootView.findViewById(R.id.rybt1);
         ryst1 = rootView.findViewById(R.id.ryst1);
+
+        btBuy = rootView.findViewById(R.id.btBuy);
+        btSell = rootView.findViewById(R.id.btSell);
 
        /** usbt2 =  rootView.findViewById(R.id.usbt2);
         usst2 =  rootView.findViewById(R.id.usst2);
@@ -152,6 +161,36 @@ public class home extends Fragment {
     @Override
     public void  onStart(){
         super.onStart();
+
+        //bitCoin
+        btBuyRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                btBuy.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        btSellRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                btSell.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
         dateRef.addValueEventListener(new ValueEventListener() {
             @Override
