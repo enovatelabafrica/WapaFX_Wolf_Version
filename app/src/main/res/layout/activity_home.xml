@@ -445,7 +445,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="75dp"
+                    android:layout_height="150dp"
                     android:layout_marginTop="220dp">
 
                     <TextView
@@ -454,7 +454,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:text="BitCoin"
+                        android:text="Cryptocurrency Market"
                         android:textColor="#fff"
                         android:textSize="20sp" />
 
@@ -484,6 +484,62 @@
                         android:textSize="17.5sp"
                         android:textColor="#fff"
                         android:text="$00000" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:text="BTC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="73dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="BitCash"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"/>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10"
+                        android:layout_marginTop="100dp"
+                        app:srcCompat="@drawable/bit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40"
+                        android:text="BTH"
+                        android:textSize="17.5dp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="100dp"/>
+
+                    <TextView
+                        android:id="@+id/bhBuy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00000"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="100dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="225dp"
+                        android:textSize="17.5sp"
+                        android:text="$00000"
+                        android:textColor="#fff"
+                        android:id="@+id/bhSell"/>
                 </RelativeLayout>
 
             </RelativeLayout>
