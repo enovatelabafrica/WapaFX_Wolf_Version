@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -184,7 +183,7 @@ implements NavigationView.OnNavigationItemSelectedListener {
             Intent g = new Intent(MainActivity.this, Monday.class);
             startActivity(g);
         }else if (id == R.id.action_share){
-            String message = "https://play.google.com/store/apps/details?id=ng.com.androidlife.wapafx";
+            String message = "https://play.google.com/store/apps/details?id=ng.com.androidlife.bellokanoex";
             Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.putExtra(Intent.EXTRA_TEXT, message);

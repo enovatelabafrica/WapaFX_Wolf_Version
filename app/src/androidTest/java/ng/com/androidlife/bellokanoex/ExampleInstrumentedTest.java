@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("ng.com.androidlife.wapafx", appContext.getPackageName());
+        assertEquals("ng.com.androidlife.bellokanoex", appContext.getPackageName());
     }
 }

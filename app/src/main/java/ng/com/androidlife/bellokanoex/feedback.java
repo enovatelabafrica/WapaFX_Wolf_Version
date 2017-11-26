@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class feedback extends AppCompatActivity {
                 String Email = ((EditText)findViewById(R.id.mail)).getText().toString();
                 String subject = ((EditText)findViewById(R.id.subject)).getText().toString();
                 Intent mail = new Intent(Intent.ACTION_SEND);
-                mail.putExtra(Intent.EXTRA_EMAIL,new String[]{"wapafx@gmail.com"});
+                mail.putExtra(Intent.EXTRA_EMAIL,new String[]{"bellokanoex@gmail.com"});
                 mail.putExtra(Intent.EXTRA_TEXT, subject);
                 mail.setType("message/rfc822");
                 startActivity(Intent.createChooser(mail, "Send email via:"));

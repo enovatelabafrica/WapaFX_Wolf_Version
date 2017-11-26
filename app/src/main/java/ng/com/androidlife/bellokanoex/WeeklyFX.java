@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 /**
  * Created by aminu on 8/16/17.

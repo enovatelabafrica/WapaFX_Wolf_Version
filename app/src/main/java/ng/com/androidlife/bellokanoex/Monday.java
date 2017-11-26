@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;

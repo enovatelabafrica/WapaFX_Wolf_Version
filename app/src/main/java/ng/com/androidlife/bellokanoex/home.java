@@ -1,4 +1,4 @@
-package ng.com.androidlife.wapafx;
+package ng.com.androidlife.bellokanoex;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -58,6 +58,10 @@ public class home extends Fragment {
 
     TextView btBuy;
     TextView btSell;
+    TextView etBuy;
+    TextView etSell;
+    TextView ltBuy;
+    TextView ltSell;
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -103,6 +107,10 @@ public class home extends Fragment {
 
     DatabaseReference btBuyRef = mRootRef.child("btBuy");
     DatabaseReference btSellRef = mRootRef.child("btSell");
+    DatabaseReference etBuyRef = mRootRef.child("etBuy");
+    DatabaseReference etSellRef = mRootRef.child("etSell");
+    DatabaseReference ltBuyRef = mRootRef.child("ltBuy");
+    DatabaseReference ltSellRef = mRootRef.child("ltSell");
 
     DatabaseReference dateRef = mRootRef.child("date");
 
@@ -128,6 +136,8 @@ public class home extends Fragment {
 
         btBuy = rootView.findViewById(R.id.btBuy);
         btSell = rootView.findViewById(R.id.btSell);
+        ltBuy = rootView.findViewById(R.id.ltBuy);
+        ltSell = rootView.findViewById(R.id.ltSell);
 
        /** usbt2 =  rootView.findViewById(R.id.usbt2);
         usst2 =  rootView.findViewById(R.id.usst2);
@@ -163,6 +173,35 @@ public class home extends Fragment {
         super.onStart();
 
         //bitCoin
+
+        ltBuyRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                ltBuy.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        ltSellRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                ltSell.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
         btBuyRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

@@ -20,37 +20,12 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary">
 
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/ukst1"
-                    android:layout_alignBottom="@+id/ukst1"
-                    android:layout_alignEnd="@+id/textView4"
-                    android:layout_alignRight="@+id/textView4"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:id="@+id/pre"
-                    android:layout_width="0dp"
-                    android:layout_height="20dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/backward" />
-
                 <TextView
                     android:id="@+id/week2date"
-                    android:layout_width="75dp"
-                    android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/pre"
-                    android:layout_alignBottom="@+id/pre"
-                    android:layout_toEndOf="@+id/pre"
-                    android:layout_toRightOf="@+id/pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
                     android:text="July, 07"
                     android:textColor="#ffaa00"
                     android:textSize="15sp" />
@@ -59,11 +34,8 @@
                     android:id="@+id/imageView"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignTop="@+id/week2date"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/week2date"
-                    android:layout_toRightOf="@+id/week2date"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/nflag" />
 
                 <TextView
@@ -82,11 +54,8 @@
                     android:id="@+id/imageView2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignTop="@id/imageView"
-                    android:layout_marginLeft="48dp"
-                    android:layout_marginStart="48dp"
-                    android:layout_toEndOf="@+id/textView3"
-                    android:layout_toRightOf="@+id/textView3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="225dp"
                     android:src="@drawable/nflag" />
 
                 <TextView
@@ -105,12 +74,8 @@
                     android:id="@+id/usft1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignLeft="@+id/pre"
-                    android:layout_alignStart="@+id/pre"
-                    android:layout_below="@+id/pre"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
                     android:src="@drawable/usflag" />
 
                 <TextView
@@ -129,10 +94,8 @@
                     android:id="@+id/ukft1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignLeft="@+id/usft1"
-                    android:layout_alignStart="@+id/usft1"
-                    android:layout_below="@+id/usft1"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ukflag" />
 
                 <TextView
@@ -151,10 +114,8 @@
                     android:id="@+id/euft1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignLeft="@+id/ukft1"
-                    android:layout_alignStart="@+id/ukft1"
-                    android:layout_below="@+id/ukft1"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="95dp"
                     android:src="@drawable/euflag" />
 
                 <TextView
@@ -172,21 +133,16 @@
                     android:id="@+id/imageView3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="125dp"
+                    android:layout_marginLeft="10dp"
                     app:srcCompat="@drawable/cfflag" />
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignLeft="@+id/imageView3"
-                    android:layout_alignStart="@+id/imageView3"
-                    android:layout_below="@+id/imageView3"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="160dp"
                     app:srcCompat="@drawable/sdflag" />
 
                 <TextView
@@ -205,12 +161,8 @@
                     android:id="@+id/cfbt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/textView2"
-                    android:layout_alignBottom="@+id/textView2"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginStart="45dp"
-                    android:layout_toEndOf="@+id/textView2"
-                    android:layout_toRightOf="@+id/textView2"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="120dp"
                     android:text="N500"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -219,25 +171,11 @@
                     android:id="@+id/cfst1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/cfbt1"
-                    android:layout_marginLeft="67dp"
-                    android:layout_marginStart="67dp"
-                    android:layout_toEndOf="@+id/cfbt1"
-                    android:layout_toRightOf="@+id/cfbt1"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="225dp"
                     android:text="N400"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView73"
-                    android:layout_alignStart="@+id/textView73"
-                    android:layout_alignTop="@+id/cfst1"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -254,9 +192,8 @@
                     android:id="@+id/rybt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/cfbt1"
-                    android:layout_alignStart="@+id/cfbt1"
-                    android:layout_alignTop="@+id/textView9"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginLeft="120dp"
                     android:text="N600"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -265,34 +202,18 @@
                     android:id="@+id/ryst1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/textView9"
-                    android:layout_alignLeft="@+id/cfst1"
-                    android:layout_alignStart="@+id/cfst1"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="160dp"
                     android:text="N000"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView8"
-                    android:layout_alignStart="@+id/textView8"
-                    android:layout_alignTop="@+id/rybt1"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/cnft1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignEnd="@+id/euft1"
-                    android:layout_alignLeft="@+id/ukft1"
-                    android:layout_alignRight="@+id/euft1"
-                    android:layout_alignStart="@+id/ukft1"
-                    android:layout_below="@+id/euft1"
-                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="195dp"
                     android:src="@drawable/cnflag" />
 
                 <TextView
@@ -310,10 +231,8 @@
                     android:id="@+id/ukst1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/textvuk"
-                    android:layout_alignBottom="@+id/textvuk"
-                    android:layout_alignLeft="@+id/ussweek2m"
-                    android:layout_alignStart="@+id/ussweek2m"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="225dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -322,10 +241,8 @@
                     android:id="@+id/usbtweek2m"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/textvus"
-                    android:layout_alignBottom="@+id/textvus"
-                    android:layout_alignLeft="@+id/imageView"
-                    android:layout_alignStart="@+id/imageView"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="35dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -334,63 +251,18 @@
                     android:id="@+id/ussweek2m"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/usbtweek2m"
-                    android:layout_alignBottom="@+id/usbtweek2m"
-                    android:layout_alignLeft="@+id/imageView2"
-                    android:layout_alignStart="@+id/imageView2"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="225dp"
                     android:text="N460"
                     android:textColor="#ffff"
                     android:textSize="17.5sp" />
 
                 <TextView
-                    android:id="@+id/textView71"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/ussweek2m"
-                    android:layout_alignBottom="@+id/ussweek2m"
-                    android:layout_alignLeft="@+id/textView72"
-                    android:layout_alignStart="@+id/textView72"
-                    android:layout_toEndOf="@+id/ussweek2m"
-                    android:layout_toRightOf="@+id/ussweek2m"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textColorHighlight="#fff"
-                    android:textColorHint="#fff"
-                    android:textColorLink="#fff"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/textView72"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/cnst1"
-                    android:layout_alignBottom="@+id/cnst1"
-                    android:layout_alignLeft="@+id/textView74"
-                    android:layout_alignStart="@+id/textView74"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/textView73"
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/eust1"
-                    android:layout_alignBottom="@+id/eust1"
-                    android:layout_alignLeft="@+id/textView72"
-                    android:layout_alignStart="@+id/textView72"
-                    android:text="**"
-                    android:textColor="#fff"
-                    android:textSize="15sp" />
-
-                <TextView
                     android:id="@+id/ukbt1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/textvuk"
-                    android:layout_alignBottom="@+id/textvuk"
-                    android:layout_alignLeft="@+id/usbtweek2m"
-                    android:layout_alignStart="@+id/usbtweek2m"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="65dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -399,10 +271,8 @@
                     android:id="@+id/eubt1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/textveu"
-                    android:layout_alignBottom="@+id/textveu"
-                    android:layout_alignLeft="@+id/ukbt1"
-                    android:layout_alignStart="@+id/ukbt1"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginLeft="120dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -411,10 +281,8 @@
                     android:id="@+id/cnbt1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/textvcn"
-                    android:layout_alignBottom="@+id/textvcn"
-                    android:layout_alignLeft="@+id/eubt1"
-                    android:layout_alignStart="@+id/eubt1"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="195dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -423,10 +291,8 @@
                     android:id="@+id/eust1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/eubt1"
-                    android:layout_alignBottom="@+id/eubt1"
-                    android:layout_alignLeft="@+id/ukst1"
-                    android:layout_alignStart="@+id/ukst1"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="95dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
@@ -435,18 +301,16 @@
                     android:id="@+id/cnst1"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_alignBaseline="@+id/cnbt1"
-                    android:layout_alignBottom="@+id/cnbt1"
-                    android:layout_alignLeft="@+id/eust1"
-                    android:layout_alignStart="@+id/eust1"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="195dp"
                     android:text="N460"
                     android:textColor="#fff"
                     android:textSize="17.5sp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="220dp">
+                    android:layout_height="300dp"
+                    android:layout_marginTop="230dp">
 
                     <TextView
                         android:id="@+id/textView6"
@@ -498,7 +362,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="73dp"
+                        android:layout_marginTop="70dp"
                         android:layout_marginLeft="10dp"
                         android:text="BitCash"
                         android:textSize="17.5sp"
@@ -508,14 +372,14 @@
                         android:id="@+id/imageView6"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:layout_marginLeft="10"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="100dp"
                         app:srcCompat="@drawable/bit" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40"
+                        android:layout_marginLeft="40dp"
                         android:text="BTH"
                         android:textSize="17.5dp"
                         android:textColor="#fff"
@@ -540,6 +404,97 @@
                         android:text="$00000"
                         android:textColor="#fff"
                         android:id="@+id/bhSell"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ethereum"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="130dp"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/eth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ETH"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="160dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00000"
+                        android:textColor="#fff"
+                        android:id="@+id/etBuy"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="115dp"
+                        android:textSize="17.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etSell"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="160dp"
+                        android:text="$00000"
+                        android:textColor="#fff"
+                        android:textSize="17.5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:text="LiteCoin"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="220dp"
+                        android:src="@drawable/ltc"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LTC"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="220dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00000"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="220dp"
+                        android:id="@+id/ltBuy"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00000"
+                        android:textSize="17.5sp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="220dp"
+                        android:id="@+id/ltSell"/>
                 </RelativeLayout>
 
             </RelativeLayout>
