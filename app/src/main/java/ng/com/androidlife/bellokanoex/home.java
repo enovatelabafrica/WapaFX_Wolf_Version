@@ -1,5 +1,6 @@
 package ng.com.androidlife.bellokanoex;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -7,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -114,12 +118,21 @@ public class home extends Fragment {
 
     DatabaseReference dateRef = mRootRef.child("date");
 
+    private AdView mAdView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
         View rootView = inflater.inflate(R.layout.activity_home, container, false);
 
         date = rootView.findViewById(R.id.week2date);
+
+        MobileAds.initialize(getActivity(),
+                "ca-app-pub-7335738024441975~3437969830");
+
+        mAdView = rootView.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         usbt1 =  rootView.findViewById(R.id.usbtweek2m);
         usst1 =  rootView.findViewById(R.id.ussweek2m);
