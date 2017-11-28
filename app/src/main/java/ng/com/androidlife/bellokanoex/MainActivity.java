@@ -193,10 +193,10 @@ implements NavigationView.OnNavigationItemSelectedListener {
             Intent f = new Intent(MainActivity.this, feedback.class);
             startActivity(f);
         }
-        else if (id == R.id.nav_weekly){
+        /**else if (id == R.id.nav_weekly){
             Intent g = new Intent(MainActivity.this, Monday.class);
-            startActivity(g);
-        }else if (id == R.id.action_share){
+            startActivity(g);**/
+        else if (id == R.id.action_share){
             String message = "https://play.google.com/store/apps/details?id=ng.com.androidlife.bellokanoex";
             Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");

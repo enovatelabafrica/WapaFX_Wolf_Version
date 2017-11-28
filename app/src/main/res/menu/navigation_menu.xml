@@ -6,10 +6,7 @@
         android:id="@+id/action_share"
         android:title="Tell a Friend"
         android:icon="@drawable/ic_share_white_24dp"/>
-    <item
-        android:id="@+id/nav_weekly"
-        android:title="Weekly Updates"
-        android:icon="@drawable/ic_update_white_24dp"/>
+
     <item
         android:id="@+id/nav_feedback"
         android:title="Feedback"
