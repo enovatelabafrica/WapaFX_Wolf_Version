@@ -66,6 +66,8 @@ public class home extends Fragment {
     TextView etSell;
     TextView ltBuy;
     TextView ltSell;
+    TextView bhBuy;
+    TextView bhSell;
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -115,6 +117,8 @@ public class home extends Fragment {
     DatabaseReference etSellRef = mRootRef.child("etSell");
     DatabaseReference ltBuyRef = mRootRef.child("ltBuy");
     DatabaseReference ltSellRef = mRootRef.child("ltSell");
+    DatabaseReference bhBuyRef = mRootRef.child("bhBuy");
+    DatabaseReference bhSellRef = mRootRef.child("bhSell");
 
     DatabaseReference dateRef = mRootRef.child("date");
 
@@ -151,6 +155,10 @@ public class home extends Fragment {
         btSell = rootView.findViewById(R.id.btSell);
         ltBuy = rootView.findViewById(R.id.ltBuy);
         ltSell = rootView.findViewById(R.id.ltSell);
+        bhBuy = rootView.findViewById(R.id.bhBuy);
+        bhSell = rootView.findViewById(R.id.bhSell);
+        etSell = rootView.findViewById(R.id.etSell);
+        etBuy = rootView.findViewById(R.id.etBuy);
 
        /** usbt2 =  rootView.findViewById(R.id.usbt2);
         usst2 =  rootView.findViewById(R.id.usst2);
@@ -186,6 +194,62 @@ public class home extends Fragment {
         super.onStart();
 
         //bitCoin
+
+        etBuyRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                etBuy.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        etSellRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                etSell.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        bhBuyRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                bhBuy.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        bhSellRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String text = dataSnapshot.getValue(String.class);
+                bhSell.setText(text);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         ltBuyRef.addValueEventListener(new ValueEventListener() {
             @Override
